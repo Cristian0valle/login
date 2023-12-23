@@ -6,11 +6,11 @@ from django.contrib.auth import authenticate, login
 
 # Create your views here.
 def home(request):
-    return render(request, 'O:/login/core/templates/core/home.html')
+    return render(request, 'O:/Programación/Python/Django/workspace/login/core/templates/core/home.html')  
 
 @login_required
 def products(request):
-    return render(request, 'O:/login/core/templates/core/products.html')
+    return render(request, 'O:/Programación/Python/Django/workspace/login/core/templates/core/products.html')
 
 def exit(request):
     logout(request)
